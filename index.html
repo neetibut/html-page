@@ -3,22 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic HTML Page</title>
+    <title>Responsive Hero & Gallery with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Welcome to JSD9 Bootcamp!</h1>
+  <body class="bg-gray-100">
+    <!-- 🚀 Hero Section -->
+    <section
+      class="flex flex-col items-center text-center p-8 bg-gradient-to-r from-blue-400 to-cyan-400 text-white md:flex-row md:justify-center md:text-left"
+    >
+      <div class="max-w-lg">
+        <h1 class="text-3xl font-bold md:text-5xl">Welcome to My Portfolio</h1>
+        <p class="mt-4 text-lg md:text-xl">
+          Building modern, responsive, and accessible websites.
+        </p>
+        <button
+          class="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-blue-200 transition"
+        >
+          Get Started
+        </button>
+      </div>
+      <div class="mt-6 md:mt-0">
+        <img
+          src="https://sothebys-com.brightspotcdn.com/dims4/default/92cd506/2147483647/strip/true/crop/4340x4556+0+0/resize/1154x1212!/format/webp/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F43%2F31%2F58d993924c8382c54f2ff3feda54%2Fhockney-corrected-final-l20020-bgtqm-1.jpg"
+          alt="Hero Image"
+          class="w-full max-w-md rounded-lg shadow-lg"
+        />
+      </div>
+    </section>
 
-    <p>
-      This is a simple HTML page. You can add more content here, like
-      paragraphs, images, lists, and more.
-    </p>
-
-    <h2>A Subheading</h2>
-
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
+    <!-- 🎨 Gallery Section -->
+    <section class="p-8">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://sothebys-com.brightspotcdn.com/dims4/default/92cd506/2147483647/strip/true/crop/4340x4556+0+0/resize/1154x1212!/format/webp/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F43%2F31%2F58d993924c8382c54f2ff3feda54%2Fhockney-corrected-final-l20020-bgtqm-1.jpg"
+            alt="Gallery Image"
+            class="w-full"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://sothebys-com.brightspotcdn.com/dims4/default/92cd506/2147483647/strip/true/crop/4340x4556+0+0/resize/1154x1212!/format/webp/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F43%2F31%2F58d993924c8382c54f2ff3feda54%2Fhockney-corrected-final-l20020-bgtqm-1.jpg"
+            alt="Gallery Image"
+            class="w-full"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://sothebys-com.brightspotcdn.com/dims4/default/92cd506/2147483647/strip/true/crop/4340x4556+0+0/resize/1154x1212!/format/webp/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F43%2F31%2F58d993924c8382c54f2ff3feda54%2Fhockney-corrected-final-l20020-bgtqm-1.jpg"
+            alt="Gallery Image"
+            class="w-full"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://sothebys-com.brightspotcdn.com/dims4/default/92cd506/2147483647/strip/true/crop/4340x4556+0+0/resize/1154x1212!/format/webp/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F43%2F31%2F58d993924c8382c54f2ff3feda54%2Fhockney-corrected-final-l20020-bgtqm-1.jpg"
+            alt="Gallery Image"
+            class="w-full"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
